@@ -1,5 +1,5 @@
-call pathogen#infect()
-call pathogen#helptags()
+" call pathogen#infect()
+" call pathogen#helptags()
 :syntax on
 set tabstop=2
 set shiftwidth=2

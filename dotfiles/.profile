@@ -4,6 +4,8 @@ alias bu='bundle update'
 alias be='bundle exec'
 alias bc='rm -rf vendor/bundle Gemfile.lock'
 alias bic='rm -rf vendor/bundle Gemfile.lock; bundle install --path vendor/bundle'
+alias brake="bundle exec rake"
+alias gg="git log --pretty=format:'%C(yellow)%h %C(red)%ad %C(blue)%an%C(green)%d %C(reset)%s' --date=short"
 
 function git-branch-delete {
   git branch -d $1
