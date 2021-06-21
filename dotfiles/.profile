@@ -1,4 +1,4 @@
-alias ls='ls -G'
+alias ls='ls -alG'
 alias bi='bundle install --path vendor/bundle'
 alias bu='bundle update'
 alias be='bundle exec'
@@ -22,7 +22,11 @@ function git-branch-delete-on-origin {
 }
 
 
-source ~/.git-completion.bash
+#source ~/.git-completion.bash
+if [ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ]; then
+    . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+fi
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
 PRE='\[\033['
 POST='m\]'
 COL_LASTEXIT="${PRE}01;41;37${POST}" # last command exit value
